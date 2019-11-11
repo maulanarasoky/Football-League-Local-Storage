@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/league"
+        android:enabled="true"
+        android:title="League"
+        android:icon="@drawable/ic_league"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_favorite"
+        android:title="Favorite"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Football League</string>
+
+    <string-array name="football_id">
+        <item>4328</item>
+        <item>4334</item>
+        <item>4331</item>
+        <item>4332</item>
+        <item>4335</item>
+        <item>4346</item>
+        <item>4344</item>
+        <item>4356</item>
+        <item>4330</item>
+        <item>4396</item>
+    </string-array>
+
+    <string-array name="football_name">
+        <item>English Premier League</item>
+        <item>French Ligue 1</item>
+        <item>German Bundesliga</item>
+        <item>Italian Serie A</item>
+        <item>Spanish La Liga</item>
+        <item>American Major League Soccer</item>
+        <item>Portuguese Primeira Liga</item>
+        <item>Australian A-League</item>
+        <item>Scottish Premier League</item>
+        <item>English League 1</item>
+    </string-array>
+
+    <string-array name="football_image">
+        <item>@drawable/english_premier_league</item>
+        <item>@drawable/french_ligue_1</item>
+        <item>@drawable/german_bundesliga</item>
+        <item>@drawable/italian_serie_a</item>
+        <item>@drawable/spanish_la_liga</item>
+        <item>@drawable/american_mayor_league</item>
+        <item>@drawable/portugeuese_premiera_liga</item>
+        <item>@drawable/australian_a_league</item>
+        <item>@drawable/scotish_premier_league</item>
+        <item>@drawable/english_league_1</item>
+    </string-array>
+
+    <string-array name="football_description">
+        <item>The Premier League (often referred to as the English Premier League (EPL) outside England), is the top level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL).</item>
+
+        <item>Ligue 1 (French pronunciation: ​; League 1, formerly known as Division 1), is the French professional league for association football clubs. It is the country\'s primary football competition and serves as the top division of the French football league system.</item>
+
+        <item>The Fußball-Bundesliga (English: Football Federal League), commonly known as the Bundesliga, is a professional association football league in Germany and the football league with the highest average stadium attendance worldwide. At the top of the German football league system, the Bundesliga is Germany\'s primary football competition.</item>
+
+        <item>Serie A, also called Serie A TIM due to sponsorship by Telecom Italia, is a professional league competition for football clubs located at the top of the Italian football league system and has been operating for over eighty years since the 1929–30 season. It had been organized by Lega Calcio until 2010, but a new league, the Lega Serie A, was created for the 2010–11 season.</item>
+
+        <item>
+            The Primera División, commonly known as La Liga and as La Liga Santander for sponsorship reasons, is the top professional association football division of the Spanish football league system. Administrated by the Liga de Fútbol Profesional (LFP), La Liga is contested by 20 teams, with the three lowest-placed teams relegated to the Segunda División and replaced by the top two teams in that division plus the winner of a play-off.
+
+A total of 60 teams have competed in La Liga since its inception. Nine teams have been crowned champions, with Real Madrid winning the title a record 32 times and Barcelona 24 times. Real Madrid dominated the championship from the 1950s through the 1980s. From the 1990s onwards, Barcelona (14 titles) and Real Madrid (7 titles) both dominated, though La Liga also saw other champions, including Atlético Madrid, Valencia, and Deportivo de La Coruña. In more recent years, Atlético Madrid has joined a coalition of now three teams dominating La Liga alongside Real Madrid and Barcelona.
+
+According to UEFA\'s league coefficient, La Liga has been the top league in Europe over the last five years, and has produced the continent\'s top-rated club more times (18) than any other league, double that of second-placed Serie A. Its clubs have won the most UEFA Champions League (16), UEFA Europa League (10), UEFA Super Cup (13), and FIFA Club World Cup (5) titles, and its players have accumulated the highest number of (FIFA) Ballon d\'Or awards (19).
+
+La Liga is one of the most popular professional sports leagues in the world, with an average attendance of 26,741 for league matches in the 2014–15 season. This is the sixth-highest of any domestic professional sports league in the world and the fourth-highest of any professional association football league in the world, behind the Bundesliga, the Premier League, and the Indian Super League.
+
+        </item>
+
+        <item>
+            Major League Soccer (MLS) is a professional soccer league representing the sport\'s highest level in both the United States and Canada. MLS constitutes one of the major professional sports leagues of the United States and Canada. The league is composed of 20 teams—17 in the U.S. and 3 in Canada. The MLS regular season runs from March to October, with each team playing 34 games; the team with the best record is awarded the Supporters\' Shield. The post season includes twelve teams competing in the MLS Cup Playoffs through November and December, culminating in the championship game, the MLS Cup. MLS teams also play in other competitions against teams from other divisions and countries, such as the U.S. Open Cup, the Canadian Championship, and the CONCACAF Champions League. MLS is sanctioned by the United States Soccer Federation (U.S. Soccer).
+
+Major League Soccer was founded in 1993 as part of the United States\' successful bid to host the 1994 FIFA World Cup. The first season took place in 1996 with ten teams. MLS experienced financial and operational struggles in its first few years: The league lost millions of dollars, teams played in mostly empty American football stadiums, and two teams folded in 2002. Since then, MLS has expanded to 20 teams, owners built soccer-specific stadiums, average attendance at MLS matches exceeds that of the National Basketball Association (NBA) and the National Hockey League (NHL), MLS secured national TV contracts, and the league is now profitable.
+
+Instead of operating as an association of independently owned teams, MLS is a single entity in which each team is owned and controlled by the league\'s investors. The investor-operators control their teams as owners control teams in other leagues, and are commonly (but inaccurately) referred to as the team\'s owners. The league\'s closed membership makes it one of the world\'s few soccer leagues that does not use promotion and relegation, which is uncommon in North America. MLS headquarters are in New York City.
+        </item>
+
+        <item>
+            The Primeira Liga (First League; Portuguese pronunciation: ), formerly called Primeira Divisão), is the top professional association football division of the Portuguese football league system.
+
+The Primeira Liga is contested by 18 clubs, but only five of them have won the title. Founded in 1934, the league is in its 81st edition (counting four experimental leagues in the 1930s). It has been dominated by the "Big Three": Benfica, Porto and Sporting CP. These three clubs have won a total of 78 titles, with
+Belenenses and Boavista winning the other two.
+
+        </item>
+
+        <item>
+
+The A-League is a professional men\'s soccer league, run by Football Federation Australia (FFA). At the top of the Australian league system, it is the country\'s primary competition for the sport. The A-League was established in 2004 as a successor to the National Soccer League (NSL) and competition commenced in August 2005. The league is currently contested by ten teams; nine based in Australia and one based in New Zealand. It is known as the Hyundai A-League (HAL) through a sponsorship arrangement with the Hyundai Motor Company.
+
+Seasons run from October to May and include a 27-round regular season and an end-of-season finals series playoff tournament involving the highest-placed teams, culminating in a grand final match. The winner of the regular season tournament is dubbed \'premier\' and the winner of the grand final is \'champion\'. This differs from the other major football codes in Australia, where \'premier\' refers to the winner of the grand final and the winner of the regular season is the \'minor premier\'. The A-League\'s non-standard terminology is reflective of the increased prestige associated with winning the regular season in association football compared to other football codes in Australia. Successful A-League clubs gain qualification into the continental competition, the Asian Football Confederation Champions League (ACL).
+
+Since the league\'s inaugural season, a total of six clubs have been crowned A-League Premiers and five clubs have been crowned A-League Champions. The current premiers and champions are Brisbane Roar, who won both titles in 2013–14.
+
+        </item>
+
+        <item>
+
+The Scottish Premiership is the top division of the Scottish Professional Football League, the league competition for professional football clubs in Scotland. The Scottish Premiership was established in July 2013, after the Scottish Professional Football League was formed by a merger of the Scottish Premier League and Scottish Football League. Teams receive three points for a win and one point for a draw. No points are awarded for a loss. Teams are ranked by total points, then goal difference, and then goals scored. At the end of each season, the club with the most points is crowned league champion. If points are equal, the goal difference and then goals scored determine the winner.
+
+        </item>
+
+        <item>
+            Football League One (often referred to as League One for short or Sky Bet League 1) is the second-highest division of the Football League and the third tier in the English football league system.
+
+Football League One was introduced for the 2004–05 season. It was previously known as the Football League Second Division and prior to the advent of the Premier League, the Football League Third Division.
+
+At present (2014–15 season), Oldham Athletic hold the longest tenure in League One, last being out of the division in the 1996–97 season when they were relegated from the Championship. There are currently six former Premier League clubs competing in the League One, namely Barnsley, Bradford City, Coventry City, Oldham Athletic, Sheffield United and Swindon Town.
+There are 24 clubs in Football League One. Each club plays every other club twice (once at home and once away). Three points are awarded for a win, one for a draw and zero for a loss. At the end of the season a table of the final League standings is determined, based on the following criteria in this order: points obtained, goal difference, goals scored, an aggregate of the results between two or more clubs (ranked using the previous three criteria) and, finally, a series of one or more play-off matches.
+
+At the end of each season the top two clubs, together with the winner of the play-offs between the clubs which finished in 3rd–6th position, are promoted to Football League Championship and are replaced by the three clubs that finished at the bottom of that division.
+
+Similarly, the four clubs that finished at the bottom of Football League One are relegated to Football League Two and are replaced by the top three clubs and the club that won the 4th–7th place play-offs in that division.
+Sky Sports currently show live League One matches with highlights shown on BBC One on their programme called The Football League Show, which also broadcasts highlights of Football League Championship and Football League Two matches. The show is available on the red button the following Sunday until midday and is available on iPlayer all the following week. Highlights of all games in the Football League are also available to view separately on the Sky Sports website. In Sweden, TV4 Sport has the rights of broadcasting from the league. A couple of league matches during the season of 09/10 including play-off matches and the play-off final to the Championship were shown. In Australia, Setanta Sports Australia broadcasts live Championship matches. In the USA and surrounding countries including Cuba, some Football League Championship, Football League One and Football League Two games are shown on beIN Sport.
+
+        </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

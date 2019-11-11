@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageLeague" type="id" />
+    <item name="leagueName" type="id" />
+    <item name="leagueDescription" type="id" />
+</resources>
