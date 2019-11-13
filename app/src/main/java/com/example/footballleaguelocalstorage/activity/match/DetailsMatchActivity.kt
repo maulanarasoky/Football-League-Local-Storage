@@ -19,6 +19,7 @@ import com.example.footballleaguelocalstorage.model.match.DetailsMatch
 import com.example.footballleaguelocalstorage.model.favorite.Favorite
 import com.example.footballleaguelocalstorage.model.match.FootballLeagueMatch
 import com.example.footballleaguelocalstorage.presenter.match.DetailsMatchPresenter
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_details_match.*
@@ -52,6 +53,9 @@ class DetailsMatchActivity : AppCompatActivity(),
         setContentView(R.layout.activity_details_match)
 
         val dataMatch: FootballLeagueMatch? = intent.getParcelableExtra(dataMatchParcel)
+
+        val collapsingToolbar: CollapsingToolbarLayout = find(R.id.collapsingToolbar)
+        collapsingToolbar.setExpandedTitleColor(resources.getColor(android.R.color.transparent))
 
         val toolbar: Toolbar = find(R.id.toolBar)
         setSupportActionBar(toolbar)

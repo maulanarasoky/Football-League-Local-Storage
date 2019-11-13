@@ -1,6 +1,5 @@
 package com.example.footballleaguelocalstorage.search
 
-import android.view.KeyEvent
 import android.widget.EditText
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
@@ -51,12 +50,20 @@ class SearchActivityTest {
         //Detail League
         onView(withId(R.id.search)).perform(click())
 
-        //SearchMatch
+        //Search Match
         onView(withId(R.id.searchMatch)).check(matches(isDisplayed()))
         onView(withId(R.id.searchMatch)).perform(click())
         onView(isAssignableFrom(EditText::class.java)).perform(typeText("Arsenal"), pressImeActionButton())
         Thread.sleep(7000)
         onView(withId(R.id.recyclerView)).check(matches(isDisplayed())).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(2))
         onView(withId(R.id.recyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(2, click()))
+
+        //Detail Match
+        Thread.sleep(1500)
+        onView(withId(R.id.app_bar_layout)).check(matches(isDisplayed()))
+        onView(withId(R.id.collapsingToolbar)).check(matches(isDisplayed()))
+        onView(withId(R.id.imgHeader)).check(matches(isDisplayed()))
+        onView(withId(R.id.linear2)).perform(swipeUp(), swipeUp(), swipeDown())
+        onView(withId(R.id.fabFavorite)).perform(click())
     }
 }
