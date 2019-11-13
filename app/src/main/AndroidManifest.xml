@@ -20,7 +20,7 @@
             android:theme="@style/DetailMatch" />
         <activity
             android:name=".activity.league.DetailsLeagueActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/DetailMatch" />
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/AppTheme">

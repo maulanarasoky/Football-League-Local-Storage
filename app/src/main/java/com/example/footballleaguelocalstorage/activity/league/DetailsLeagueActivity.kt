@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.ProgressBar
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -21,8 +22,10 @@ import com.example.footballleaguelocalstorage.model.league.FootballLeagueData
 import com.example.footballleaguelocalstorage.model.team.FootballTeamData
 import com.example.footballleaguelocalstorage.presenter.league.DetailsLeaguePresenter
 import com.github.ybq.android.spinkit.style.Wave
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_details_league.*
+import org.jetbrains.anko.find
 import org.jetbrains.anko.startActivity
 
 class DetailsLeagueActivity : AppCompatActivity(),
@@ -49,6 +52,18 @@ class DetailsLeagueActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_league)
 
+        val dataLeague: FootballLeagueData? = intent.getParcelableExtra(dataParcel)
+
+        val collapsingToolbar: CollapsingToolbarLayout = find(R.id.collapsingToolbar)
+        collapsingToolbar.setExpandedTitleColor(resources.getColor(android.R.color.transparent))
+
+        val toolbar: Toolbar = find(R.id.toolBar)
+        setSupportActionBar(toolbar)
+
+        supportActionBar?.title = dataLeague?.name
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         progressBar = findViewById(R.id.progressBar)
 
         val viewPagerAdapter =
@@ -63,12 +78,6 @@ class DetailsLeagueActivity : AppCompatActivity(),
 
         val styleProgressBar = Wave()
         progressBar.indeterminateDrawable = styleProgressBar
-
-        val dataLeague: FootballLeagueData? = intent.getParcelableExtra(dataParcel)
-
-        supportActionBar?.title = dataLeague?.name
-
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         Glide.with(this).load(dataLeague?.image).apply(RequestOptions.overrideOf(250, 250))
             .into(img_item_photo)
