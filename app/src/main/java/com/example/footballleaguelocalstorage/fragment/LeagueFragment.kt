@@ -63,6 +63,7 @@ class LeagueFragment : Fragment(), AnkoComponent<Context> {
             padding = dip(16)
             lparams(width = matchParent, height = wrapContent)
             recyclerView {
+                id = R.id.recyclerView
                 layoutManager = GridLayoutManager(context, 2)
                 adapter =
                     FootballLeagueAdapter(
