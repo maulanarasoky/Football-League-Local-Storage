@@ -63,7 +63,7 @@ class SearchMatchActivity : AppCompatActivity(),
         inflate.inflate(R.menu.menu, menu)
 
         val manager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
-        val searchItem = menu?.findItem(R.id.search)
+        val searchItem = menu?.findItem(R.id.searchMatch)
         val searchView = searchItem?.actionView as SearchView
 
         searchView.setSearchableInfo(manager.getSearchableInfo(componentName))
@@ -146,6 +146,10 @@ class SearchMatchActivity : AppCompatActivity(),
                 }
             }
         }else{
+            textNoData.visibility = View.VISIBLE
+        }
+
+        if(adapter.itemCount == 0){
             textNoData.visibility = View.VISIBLE
         }
 
