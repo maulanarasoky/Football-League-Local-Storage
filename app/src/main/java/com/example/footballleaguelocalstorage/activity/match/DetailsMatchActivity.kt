@@ -166,7 +166,7 @@ class DetailsMatchActivity : AppCompatActivity(),
         progressBar.visibility = View.GONE
     }
 
-    override fun showTeamList(detailsMatch: List<DetailsMatch>?) {
+    override fun showDetailsMatch(detailsMatch: List<DetailsMatch>?) {
         dataDetailsMatch.clear()
         if (detailsMatch != null) {
             dataDetailsMatch.addAll(detailsMatch)

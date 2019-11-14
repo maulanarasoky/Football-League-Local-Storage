@@ -83,7 +83,7 @@ class NextMatchFragment : Fragment(),
         progressBar.visibility = View.INVISIBLE
     }
 
-    override fun showTeamList(
+    override fun showMatchList(
         dataMatch: List<FootballLeagueMatch>?,
         dataTeam: List<FootballTeamData>
     ) {

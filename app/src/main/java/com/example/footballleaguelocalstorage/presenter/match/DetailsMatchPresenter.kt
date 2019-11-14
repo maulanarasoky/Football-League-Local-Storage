@@ -8,8 +8,6 @@ import com.example.footballleaguelocalstorage.response.match.DetailsResponse
 import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.uiThread
 
 class DetailsMatchPresenter (private val view : DetailsMatchView, private val apiRepository : ApiRepository, private val gson : Gson, private val context: CoroutineContextProvider = CoroutineContextProvider()) {
     fun getDetailsMatch(idMatch : String?) {
@@ -20,7 +18,7 @@ class DetailsMatchPresenter (private val view : DetailsMatchView, private val ap
                 DetailsResponse:: class.java)
 
             view.hideLoading()
-            view.showTeamList(data.detailsMatch)
+            view.showDetailsMatch(data.detailsMatch)
 
         }
     }

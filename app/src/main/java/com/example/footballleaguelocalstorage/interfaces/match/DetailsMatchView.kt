@@ -5,5 +5,5 @@ import com.example.footballleaguelocalstorage.model.match.DetailsMatch
 interface DetailsMatchView {
     fun showLoading()
     fun hideLoading()
-    fun showTeamList(detailsMatch : List<DetailsMatch>?)
+    fun showDetailsMatch(detailsMatch : List<DetailsMatch>?)
 }

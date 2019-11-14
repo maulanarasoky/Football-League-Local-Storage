@@ -61,7 +61,7 @@ class DetailsMatchPresenterTest {
             presenter.getDetailsMatch(idMatch)
 
             Mockito.verify(view).showLoading()
-            Mockito.verify(view).showTeamList(matchData)
+            Mockito.verify(view).showDetailsMatch(matchData)
             Mockito.verify(view).hideLoading()
         }
     }
