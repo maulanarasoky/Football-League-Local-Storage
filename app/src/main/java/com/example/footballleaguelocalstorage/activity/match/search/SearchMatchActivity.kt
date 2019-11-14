@@ -118,7 +118,7 @@ class SearchMatchActivity : AppCompatActivity(),
         progressBar.visibility = View.INVISIBLE
     }
 
-    override fun showTeamList(dataMatch: List<FootballLeagueMatch>?, dataTeam: List<FootballTeamData>) {
+    override fun showMatchList(dataMatch: List<FootballLeagueMatch>?, dataTeam: List<FootballTeamData>) {
         val nameLeague: String? = intent.getStringExtra(searchLeagueName)
         this.dataMatch.clear()
         this.dataTeam.clear()

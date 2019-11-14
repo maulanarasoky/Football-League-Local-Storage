@@ -9,8 +9,6 @@ import com.example.footballleaguelocalstorage.response.team.TeamResponse
 import com.google.gson.Gson
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.uiThread
 
 class SearchMatchPresenter(private val view : SearchMatchView, private val apiRepository : ApiRepository, private val gson : Gson, private val context: CoroutineContextProvider = CoroutineContextProvider()) {
     fun searchMatch(matchName : String?, nameLeague: String?){
@@ -26,7 +24,7 @@ class SearchMatchPresenter(private val view : SearchMatchView, private val apiRe
 
 
             view.hideLoading()
-            view.showTeamList(dataMatch.allMatch, dataTeam.teams)
+            view.showMatchList(dataMatch.allMatch, dataTeam.teams)
 
         }
     }
