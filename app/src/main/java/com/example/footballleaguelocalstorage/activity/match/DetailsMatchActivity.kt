@@ -17,7 +17,7 @@ import com.example.footballleaguelocalstorage.database.database
 import com.example.footballleaguelocalstorage.interfaces.match.DetailsMatchView
 import com.example.footballleaguelocalstorage.model.match.DetailsMatch
 import com.example.footballleaguelocalstorage.model.favorite.Favorite
-import com.example.footballleaguelocalstorage.model.match.FootballLeagueMatch
+import com.example.footballleaguelocalstorage.model.match.Match
 import com.example.footballleaguelocalstorage.presenter.match.DetailsMatchPresenter
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -52,7 +52,7 @@ class DetailsMatchActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_match)
 
-        val dataMatch: FootballLeagueMatch? = intent.getParcelableExtra(dataMatchParcel)
+        val dataMatch: Match? = intent.getParcelableExtra(dataMatchParcel)
 
         val collapsingToolbar: CollapsingToolbarLayout = find(R.id.collapsingToolbar)
         collapsingToolbar.setExpandedTitleColor(resources.getColor(android.R.color.transparent))
@@ -99,7 +99,7 @@ class DetailsMatchActivity : AppCompatActivity(),
     }
 
     private fun addToFavorite(){
-        val dataMatch: FootballLeagueMatch? = intent.getParcelableExtra(dataMatchParcel)
+        val dataMatch: Match? = intent.getParcelableExtra(dataMatchParcel)
         val homePhoto = intent.getStringExtra(homePhoto)
         val awayPhoto = intent.getStringExtra(awayPhoto)
         val status: String? = intent.getStringExtra("status")
@@ -140,7 +140,7 @@ class DetailsMatchActivity : AppCompatActivity(),
     }
 
     private fun favoriteState(){
-        val dataMatch: FootballLeagueMatch? = intent.getParcelableExtra(dataMatchParcel)
+        val dataMatch: Match? = intent.getParcelableExtra(dataMatchParcel)
         database.use {
             val result = select(Favorite.TABLE_FAVORITE).whereArgs("(ID_EVENT = {id})", "id" to dataMatch?.idEvent.toString())
             val favorite = result.parseList(classParser<Favorite>())

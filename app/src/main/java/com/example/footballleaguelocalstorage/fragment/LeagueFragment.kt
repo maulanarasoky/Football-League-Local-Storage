@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 
 import com.example.footballleaguelocalstorage.R
 import com.example.footballleaguelocalstorage.adapter.league.FootballLeagueAdapter
-import com.example.footballleaguelocalstorage.model.league.FootballLeagueData
+import com.example.footballleaguelocalstorage.model.league.LeagueData
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 
@@ -20,7 +20,7 @@ import org.jetbrains.anko.recyclerview.v7.recyclerView
  */
 class LeagueFragment : Fragment(), AnkoComponent<Context> {
 
-    private var items : MutableList<FootballLeagueData> = mutableListOf()
+    private var items : MutableList<LeagueData> = mutableListOf()
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -39,7 +39,7 @@ class LeagueFragment : Fragment(), AnkoComponent<Context> {
 
         for (i in name.indices){
             items.add(
-                FootballLeagueData(
+                LeagueData(
                     id[i],
                     name[i],
                     description[i],

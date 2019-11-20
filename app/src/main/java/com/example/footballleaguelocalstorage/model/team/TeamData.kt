@@ -2,7 +2,7 @@ package com.example.footballleaguelocalstorage.model.team
 
 import com.google.gson.annotations.SerializedName
 
-data class FootballTeamData(
+data class TeamData(
     @SerializedName("idTeam")
     var idTeam : Int? = 0,
 

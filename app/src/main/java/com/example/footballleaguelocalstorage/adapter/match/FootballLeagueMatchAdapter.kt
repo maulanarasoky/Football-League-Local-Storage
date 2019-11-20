@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.footballleaguelocalstorage.R
 import com.example.footballleaguelocalstorage.activity.match.DetailsMatchActivity
-import com.example.footballleaguelocalstorage.model.match.FootballLeagueMatch
-import com.example.footballleaguelocalstorage.model.team.FootballTeamData
+import com.example.footballleaguelocalstorage.model.match.Match
+import com.example.footballleaguelocalstorage.model.team.TeamData
 import kotlinx.android.extensions.LayoutContainer
 import org.jetbrains.anko.find
 import org.jetbrains.anko.startActivity
@@ -18,8 +18,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class FootballLeagueMatchAdapter(
-    private val dataMatch: List<FootballLeagueMatch>,
-    private val dataTeam: List<FootballTeamData>
+    private val dataMatch: List<Match>,
+    private val dataTeam: List<TeamData>
 ) : RecyclerView.Adapter<FootballLeagueMatchAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         ViewHolder(

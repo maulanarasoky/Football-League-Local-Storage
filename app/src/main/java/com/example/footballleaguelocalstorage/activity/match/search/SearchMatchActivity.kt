@@ -15,8 +15,8 @@ import com.example.footballleaguelocalstorage.R
 import com.example.footballleaguelocalstorage.adapter.match.FootballLeagueMatchAdapter
 import com.example.footballleaguelocalstorage.api.ApiRepository
 import com.example.footballleaguelocalstorage.interfaces.match.search.SearchMatchView
-import com.example.footballleaguelocalstorage.model.match.FootballLeagueMatch
-import com.example.footballleaguelocalstorage.model.team.FootballTeamData
+import com.example.footballleaguelocalstorage.model.match.Match
+import com.example.footballleaguelocalstorage.model.team.TeamData
 import com.example.footballleaguelocalstorage.presenter.match.search.SearchMatchPresenter
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_search_match.*
@@ -29,8 +29,8 @@ class SearchMatchActivity : AppCompatActivity(),
     private lateinit var progressBar: ProgressBar
     private lateinit var presenter: SearchMatchPresenter
     private lateinit var adapter: FootballLeagueMatchAdapter
-    private val dataMatch: MutableList<FootballLeagueMatch> = mutableListOf()
-    private val dataTeam: MutableList<FootballTeamData> = mutableListOf()
+    private val dataMatch: MutableList<Match> = mutableListOf()
+    private val dataTeam: MutableList<TeamData> = mutableListOf()
 
     companion object{
         const val searchLeagueName = "SearchName"
@@ -118,7 +118,7 @@ class SearchMatchActivity : AppCompatActivity(),
         progressBar.visibility = View.INVISIBLE
     }
 
-    override fun showMatchList(dataMatch: List<FootballLeagueMatch>?, dataTeam: List<FootballTeamData>) {
+    override fun showMatchList(dataMatch: List<Match>?, dataTeam: List<TeamData>) {
         val nameLeague: String? = intent.getStringExtra(searchLeagueName)
         this.dataMatch.clear()
         this.dataTeam.clear()
@@ -126,7 +126,7 @@ class SearchMatchActivity : AppCompatActivity(),
         if (dataMatch != null) {
             for (i in dataMatch.indices){
                 if(dataMatch[i].strLeague.equals(nameLeague) && dataMatch[i].strSport.equals("Soccer")){
-                    val data = FootballLeagueMatch(
+                    val data = Match(
                         dataMatch[i].idEvent,
                         dataMatch[i].eventName,
                         dataMatch[i].nameHomeTeam,

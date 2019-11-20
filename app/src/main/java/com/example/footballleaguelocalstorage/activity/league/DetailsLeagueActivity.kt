@@ -18,8 +18,8 @@ import com.example.footballleaguelocalstorage.api.ApiRepository
 import com.example.footballleaguelocalstorage.fragment.league.LastMatchFragment
 import com.example.footballleaguelocalstorage.fragment.league.NextMatchFragment
 import com.example.footballleaguelocalstorage.interfaces.league.DetailsLeagueView
-import com.example.footballleaguelocalstorage.model.league.FootballLeagueData
-import com.example.footballleaguelocalstorage.model.team.FootballTeamData
+import com.example.footballleaguelocalstorage.model.league.LeagueData
+import com.example.footballleaguelocalstorage.model.team.TeamData
 import com.example.footballleaguelocalstorage.presenter.league.DetailsLeaguePresenter
 import com.github.ybq.android.spinkit.style.Wave
 import com.google.android.material.appbar.CollapsingToolbarLayout
@@ -46,13 +46,13 @@ class DetailsLeagueActivity : AppCompatActivity(),
 
     private lateinit var adapter : FootballTeamAdapter
 
-    private var items : MutableList<FootballTeamData> = mutableListOf()
+    private var items : MutableList<TeamData> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_league)
 
-        val dataLeague: FootballLeagueData? = intent.getParcelableExtra(dataParcel)
+        val dataLeague: LeagueData? = intent.getParcelableExtra(dataParcel)
 
         val collapsingToolbar: CollapsingToolbarLayout = find(R.id.collapsingToolbar)
         collapsingToolbar.setExpandedTitleColor(resources.getColor(android.R.color.transparent))
@@ -133,7 +133,7 @@ class DetailsLeagueActivity : AppCompatActivity(),
         progressBar.visibility = View.GONE
     }
 
-    override fun showTeamList(data: List<FootballTeamData>) {
+    override fun showTeamList(data: List<TeamData>) {
         items.clear()
         items.addAll(data)
         adapter.notifyDataSetChanged()

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class FootballLeagueMatch(
+data class Match(
     @SerializedName("idEvent")
     var idEvent: String? = null,
 

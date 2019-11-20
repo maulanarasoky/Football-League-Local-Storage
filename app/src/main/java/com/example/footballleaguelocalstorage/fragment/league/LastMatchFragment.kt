@@ -12,8 +12,8 @@ import com.example.footballleaguelocalstorage.R
 import com.example.footballleaguelocalstorage.adapter.match.FootballLeagueMatchAdapter
 import com.example.footballleaguelocalstorage.api.ApiRepository
 import com.example.footballleaguelocalstorage.interfaces.league.match.LeagueMatchView
-import com.example.footballleaguelocalstorage.model.match.FootballLeagueMatch
-import com.example.footballleaguelocalstorage.model.team.FootballTeamData
+import com.example.footballleaguelocalstorage.model.match.Match
+import com.example.footballleaguelocalstorage.model.team.TeamData
 import com.example.footballleaguelocalstorage.presenter.match.ListMatchPresenter
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.fragment_last_match.*
@@ -36,8 +36,8 @@ class LastMatchFragment : Fragment(),
 
     private lateinit var adapter : FootballLeagueMatchAdapter
 
-    private var dataMatch : MutableList<FootballLeagueMatch> = mutableListOf()
-    private var dataTeam : MutableList<FootballTeamData> = mutableListOf()
+    private var dataMatch : MutableList<Match> = mutableListOf()
+    private var dataTeam : MutableList<TeamData> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -83,7 +83,7 @@ class LastMatchFragment : Fragment(),
         progressBar.visibility = View.INVISIBLE
     }
 
-    override fun showMatchList(dataMatch: List<FootballLeagueMatch>?, dataTeam: List<FootballTeamData>) {
+    override fun showMatchList(dataMatch: List<Match>?, dataTeam: List<TeamData>) {
         this.dataMatch.clear()
         this.dataTeam.clear()
         if (dataMatch != null) {
